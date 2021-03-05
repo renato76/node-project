@@ -24,7 +24,7 @@ storeSchema.pre('save', function(next) {
   this.slug = slug(this.name)
   next()
 
-  // to do make more slugs
+  // to do make more resilient
 })
 
 module.exports = mongoose.model('Store', storeSchema)
