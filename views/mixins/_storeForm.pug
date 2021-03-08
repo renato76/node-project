@@ -25,6 +25,7 @@ mixin storeForm(store = {})
     input(type="text" id="lat" name="location[coordinates][1]" value=
     (store.location && store.location.coordinates[1]) required)
 
+    //- test dump data
     //- pre= h.dump(store)
 
     - const choices = ['Wifi', 'Open Late', 'Family Friendly', 'Vegetarian', 'Licensed']
